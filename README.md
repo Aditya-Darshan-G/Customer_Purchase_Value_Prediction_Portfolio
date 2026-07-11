@@ -91,7 +91,7 @@ Complete this section after running the notebook fully on Kaggle:
 - **Final rank:** `426` out of `1790`
 - **Placement:** Top `24%`
 
-- **Best XGBoost parameters:**
+### Best XGBoost parameters:
 - The best-performing XGBoost configuration identified through randomized hyperparameter search was:
 
 ```python
