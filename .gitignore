@@ -2,16 +2,21 @@
 data/
 *.csv
 
-# Notebook and Python artifacts
+# Notebook artifacts
 .ipynb_checkpoints/
 __pycache__/
 *.py[cod]
 
-# Models and generated outputs
+# Generated models and outputs
 models/
 outputs/
 *.joblib
 *.pkl
+
+# Local environments and secrets
+.venv/
+venv/
+.env
 
 # OS/editor files
 .DS_Store
