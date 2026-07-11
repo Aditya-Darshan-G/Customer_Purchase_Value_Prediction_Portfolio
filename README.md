@@ -80,9 +80,27 @@ Four standalone regression workflows were retained because the course project re
 
 All reported validation metrics in the cleaned notebook are calculated on the original `purchaseValue` scale.
 
-## Results
+## Key Visuals
 
-Complete this section after running the notebook fully on Kaggle:
+### Target Distribution
+
+The target variable was highly skewed, with many low or zero-purchase sessions and a smaller number of high-value sessions.
+
+![Target Distribution](images/target_distribution.png)
+
+### Model Comparison
+
+XGBoost achieved the strongest validation R² among the four evaluated workflows.
+
+![Model Comparison](images/model_comparison.png)
+
+### Feature Importance
+
+The XGBoost model captured nonlinear relationships across engagement, traffic-source, device, and geographic variables.
+
+![Feature Importance](images/feature_importance.png)
+
+## Results
 
 - **Corrected XGBoost holdout R²:** `0.6994`
 - **Corrected XGBoost holdout MAE:** `26758348.63`
