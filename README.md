@@ -104,8 +104,7 @@ Complete this section after running the notebook fully on Kaggle:
     "n_estimators": 282,
     "subsample": 0.905
 }
-
-Label the corrected holdout result and the historical Kaggle leaderboard result separately if they came from different notebook versions.
+```
 
 ## Repository structure
 
@@ -117,28 +116,6 @@ customer-purchase-value-prediction/
 └── notebooks/
     └── customer_purchase_value_prediction.ipynb
 ```
-
-## Running the notebook
-
-1. Open the original Kaggle competition notebook environment where the data are attached.
-2. Upload or copy the cleaned notebook into that environment.
-3. Set `FULL_SEARCH = False` for a quick test run.
-4. Run every cell and resolve any errors.
-5. Change `FULL_SEARCH = True`.
-6. Restart the session and use **Save & Run All**.
-7. Download the fully executed notebook.
-8. Replace the unexecuted notebook in this repository with the executed version.
-
-## Validation note
-
-An earlier experimental notebook oversampled non-zero purchase rows from the complete dataset after creating a validation split. That allowed validation observations to re-enter model training and inflated the validation score.
-
-The cleaned notebook corrects this by:
-
-- splitting before oversampling;
-- oversampling only the training partition;
-- keeping the validation set untouched;
-- reporting metrics on the original target scale.
 
 ## Technologies
 
