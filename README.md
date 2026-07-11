@@ -86,8 +86,7 @@ All reported validation metrics in the cleaned notebook are calculated on the or
 
 The target variable was highly skewed, with many low or zero-purchase sessions and a smaller number of high-value sessions.
 
-![Target Distribution_raw](images/target_distribution_raw.png)
-![Target Distribution_log_scale](images/target_distribution_log.png)
+![Target Distribution_raw](images/target_distribution.png)
 
 ### Model Comparison
 
