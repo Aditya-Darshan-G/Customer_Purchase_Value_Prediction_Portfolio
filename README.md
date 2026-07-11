@@ -84,13 +84,26 @@ All reported validation metrics in the cleaned notebook are calculated on the or
 
 Complete this section after running the notebook fully on Kaggle:
 
-- **Corrected XGBoost holdout R²:** `[ENTER VALUE]`
-- **Corrected XGBoost holdout MAE:** `[ENTER VALUE]`
-- **Corrected XGBoost holdout RMSE:** `[ENTER VALUE]`
-- **Final Kaggle score:** `[ENTER VALUE]`
-- **Final rank:** `[ENTER RANK]` out of `[ENTER TOTAL TEAMS]`
-- **Placement:** Top `[ENTER PERCENTILE]%`
-- **Best XGBoost parameters:** `[ENTER PARAMETERS]`
+- **Corrected XGBoost holdout R²:** `0.6994`
+- **Corrected XGBoost holdout MAE:** `26758348.63`
+- **Corrected XGBoost holdout RMSE:** `102667729.74`
+- **Final Kaggle score:** `0.59254`
+- **Final rank:** `426` out of `1790`
+- **Placement:** Top `24%`
+
+- **Best XGBoost parameters:**
+- The best-performing XGBoost configuration identified through randomized hyperparameter search was:
+
+```python
+{
+    "colsample_bytree": 0.658,
+    "gamma": 0.147,
+    "learning_rate": 0.1086,
+    "max_depth": 9,
+    "min_child_weight": 4,
+    "n_estimators": 282,
+    "subsample": 0.905
+}
 
 Label the corrected holdout result and the historical Kaggle leaderboard result separately if they came from different notebook versions.
 
